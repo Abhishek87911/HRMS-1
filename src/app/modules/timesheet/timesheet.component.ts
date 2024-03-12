@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+import { AbstractControl, FormControl, FormGroup, Validators } from '@angular/forms';
+
 
 @Component({
   selector: 'app-timesheet',
@@ -7,6 +8,45 @@ import { FormGroup } from '@angular/forms';
   styleUrls: ['./timesheet.component.scss']
 })
 export class TimesheetComponent {
+
+
+
+
+  validationForm: FormGroup;
+
+  constructor() {
+    this.validationForm = new FormGroup({
+      projectName: new FormControl(null, Validators.required),
+      taskName: new FormControl(null, Validators.required),
+      detail: new FormControl(null, Validators.required),
+      workingHour: new FormControl(null, Validators.required),
+      description: new FormControl(null, Validators.required),
+      
+    });
+  }
+
+  get projectName(): AbstractControl {
+    return this.validationForm.get('projectName')!;
+  }
+
+  get taskName(): AbstractControl {
+    return this.validationForm.get('taskName')!;
+  }
+  
+  get detail(): AbstractControl {
+    return this.validationForm.get('detail')!;
+  }
+
+  get workingHour(): AbstractControl {
+    return this.validationForm.get('workingHour')!;
+  }
+  
+
+  
+  
+
+
+
   TimeSheetData =[ 
     {id:'1', punch_in: '10 AM',date:'01 jan 2024'},
     {id:'2', punch_in: '10 AM',date:'01 jan 2024'},
