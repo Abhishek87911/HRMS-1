@@ -1,0 +1,126 @@
+<nav class="navbar">
+    <div [ngClass]="{'upper-navbar': true, 'upper-navbar-rtl': !isLayoutLtr}">
+        <h4 class="navbar-heading">
+            {{heading}}
+        </h4> 
+        <div class="upper-navbar-right">
+            <div class="search-container">
+                <input type="text">
+                <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+            </div>
+            <div class="btn-section">
+                <!-- Language dropdown -->
+                <div class="btn-container">
+                    <button (click)="onLangBtnClick()">
+                        <i class="fa-solid fa-language fa-2xl" style="color: #ffffff;"></i>
+                    </button>
+                    <div class="btn-dropdown-container" *ngIf="isLangDropOpen">
+                        <div class="btn-dropdown-list">
+                            <button *ngFor="let language of languages">
+                                <i class={{language.flagClass}}></i>
+                                {{language.name}}
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Alert Dropdown -->
+                <div class="btn-container">
+                    <button (click)="onAlertBtnClick()">
+                        <i class="fa-solid fa-bell fa-xl" style="color: #ffffff;"></i>
+                    </button>
+                    <div class="btn-dropdown-container alert-dropdown-container" *ngIf="isAlertDropOpen">
+                        <div class="btn-dropdown-list">
+                            <p *ngFor="let alert of alerts">
+                                {{alert.data}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Message dropdown -->
+                <div class="btn-container" >
+                    <button (click)="onMsgBtnClick()">
+                        <i class="fa-solid fa-message fa-xl" style="color: #ffffff;"></i>
+                    </button>
+                    <div class="btn-dropdown-container msg-dropdown-container" *ngIf="isMsgDropOpen">
+                        <div class="btn-dropdown-list">
+                            <p *ngFor="let message of messages">
+                                {{message.msg}}
+                                <br>
+                                -{{message.by}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- UPPER NAVBAR RIGHT PROFILE ICON -->
+            <div>
+                <button (click)="onProfileBtnClick()" class="upper-navbar-right-profile-btn">
+                    <img src="../../../assets/img/user-img.jpg">
+                </button>
+                <div class="profile-dropdown-container" *ngIf="isProfileDropOpen">
+                    <div class="btn-dropdown-list">
+                        <button routerLink="profile" > View Profile</button>
+                        <button (click)="logout()"><i class="fa fa-sign-in"> </i>  Logout</button>
+                    </div>
+                </div>
+            </div>
+            <button class="lower-navbar-toggle-btn" (click)="toggleLowerNavbar()">
+                <i class="fa-solid fa-ellipsis-vertical fa-xl" style="color: #ffffff;"></i>
+            </button>
+        </div>
+    </div>
+    <!-- LOWER NAVBAR SECTION -->
+    <div [ngClass]="{'lower-navbar':true, 'lower-navbar-active':isLowerNav, 'lower-navbar-inactive':!isLowerNav}">
+        <div class="upper-navbar-right">
+            <div class="search-container">
+                <input type="text">
+                <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+            </div>
+            <div class="btn-section">
+                <!-- Language dropdown -->
+                <div class="btn-container">
+                    <button (click)="onLangBtnClick()">
+                        <i class="fa-solid fa-language fa-2xl" style="color: #ffffff;"></i>
+                    </button>
+                    <div class="btn-dropdown-container" *ngIf="isLangDropOpen">
+                        <div class="btn-dropdown-list">
+                            <button *ngFor="let language of languages">
+                                <i class={{language.flagClass}}></i>
+                                {{language.name}}
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Alert Dropdown -->
+                <div class="btn-container">
+                    <button (click)="onAlertBtnClick()">
+                        <i class="fa-solid fa-bell fa-xl" style="color: #ffffff;"></i>
+                    </button>
+                    <div class="btn-dropdown-container alert-dropdown-container" *ngIf="isAlertDropOpen">
+                        <div class="btn-dropdown-list">
+                            <p *ngFor="let alert of alerts">
+                                {{alert.data}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Message dropdown -->
+                <div class="btn-container" >
+                    <button (click)="onMsgBtnClick()">
+                        <i class="fa-solid fa-message fa-xl" style="color: #ffffff;"></i>
+                    </button>
+                    <div class="btn-dropdown-container msg-dropdown-container" *ngIf="isMsgDropOpen">
+                        <div class="btn-dropdown-list">
+                            <p *ngFor="let message of messages">
+                                {{message.msg}}
+                                <br>
+                                -{{message.by}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+ </div>
+</nav>

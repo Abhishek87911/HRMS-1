@@ -1,0 +1,61 @@
+.dropdownmore {
+    margin-top: 0.6%;
+    text-decoration: none;
+  }
+  
+  /* Remove default styling for list items */
+  .nav li {
+    list-style: none;
+    display: inline-block;
+  }
+  
+  /* Style the links within tabs */
+  .nav .nav-link {
+    position: relative;
+    color: black; /* Default text color */
+  }
+  
+  /* Change the background color of the tab when active */
+  .nav .nav-item.active .nav-link {
+    background-color: var(--orange-primary);
+    color: white; /* Text color of the tab when active */
+  }
+  
+  /* Style the ::before pseudo-element for bottom line */
+  .nav .nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: transparent;
+    transition: width 0.3s ease;
+  }
+  
+  /* Change the color of the bottom line when hovering over a tab */
+  .nav .nav-link:hover::before {
+    width: 100%;
+    background-color: var(--orange-primary);
+  }
+  
+  /* Change the background color of the tab when hovering */
+  .nav .nav-link:hover {
+    background-color:var(--orange-primary);
+    color: white; /* Text color of the tab when hovered */
+  }
+  
+  .black-link {
+    color: rgba(73, 73, 73, 0.555);
+  }
+  
+  .user-tabs {
+    white-space: nowrap; /* Prevents wrapping */
+    overflow-x: auto; /* Enables horizontal scrolling when necessary */
+    -webkit-overflow-scrolling: touch; /* Enables smooth scrolling on iOS */
+  }
+  
+  .user-tabs .nav {
+    display: inline-block; /* Allows tabs to wrap */
+  }
+  

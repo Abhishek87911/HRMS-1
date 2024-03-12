@@ -1,0 +1,136 @@
+<div>
+  <div style="display: flex;">
+    <div class="container"> 
+      <div class="container"
+        style="display: flex; align-items: center; justify-content: center; flex-direction: column; ">
+        <div class="card" style=" margin-top: 4vh; box-shadow: 6px 6px 20px; width:70vh ;">
+          <div class="card-body" style="overflow: hidden; height: 18vh;">
+            <img src="../../assets/login/maintop.png" alt="klve"
+              style="height: 18vh;padding-bottom: 30px; padding-left:17vh ;">
+          </div>
+        </div>
+        <div class="dummy" style="margin-bottom: 6vh;"></div>
+        <div class="card custom-card" style="box-shadow: 2px 2px 10px; margin-bottom: 0vh; ">
+          <div class="card-body">
+            <img src="../../assets/login/secondmain.png" alt="klve"
+              style=" border-radius: 600px; padding-left: 11vh; height: 12vh;">
+
+            <form (ngSubmit)="onSubmit()" name="loginForm" [formGroup]="loginForm">
+              Email Input
+              <h4><i class="fa-solid fa-user"></i> Login</h4>
+              <div class="emailInput">
+                <mat-form-field class="full-width" >
+                  <mat-label >Email</mat-label>
+                  <input formControlName="email" style="color: black;" matInput placeholder="Enter email address"
+                    required />
+                  <mat-error *ngIf="!loginForm.controls['email'].valid"
+                    style="background-color: white;padding-bottom: 10px; width:108%;">
+                    Enter valid Email Id
+                  </mat-error>
+                </mat-form-field>
+              </div> 
+              <div> 
+                <mat-form-field class="full-width" >
+                  <mat-label >Password</mat-label>
+                  <input style="color: black;" formControlName="password" matInput [type]=" hide ? 'password' : 'text'"
+                    required />
+                  <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide Password'"
+                    [attr.aria-pressed]="hide">
+                    <mat-icon>
+                      {{hide ? 'visibility_off' : 'visibility'}}
+                    </mat-icon>
+                  </button> 
+                  <mat-error *ngIf="!loginForm.controls['password'].valid" style="background-color: white;">
+                    Password is required
+                  </mat-error>
+                </mat-form-field>
+              </div> 
+              <span>
+                <a class="text-link" class="aLink me-5" routerLink="../forgot-password">Forgot Password?</a>
+              </span>
+
+              <button mat-flat-button class="custom-button-color btn btn-gradient btn-block mb-4"
+                style="border-radius: 30px;"><mat-icon>lock_open</mat-icon>Sign in</button> 
+            </form>
+          </div>
+        </div>
+        <!-- Footer --> 
+        <div style="position: absolute; bottom: 0; width: 60vh;">
+          <footer class="text-center text-lg-start bg-light text-muted "> 
+            <div class="text-center p-3 " style="background-color:white; display:flex"> 
+              <p class="me-5 text-reset"> © 2021 Copyright:</p>
+              <p class="me-4 text-reset"></p>
+              <span style="margin-left: 2vh;"></span>
+              <div stylep=" margin-right: 13vh;">
+                <a href="https://www.facebook.com/Nighwantech" target="_blank" class="me-3 text-reset">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com/nighwantech" target="_blank" class="me-3 text-reset">
+                  <i class="fab fa-twitter"></i>
+                </a> 
+                <a href="https://www.instagram.com/nighwantech" target="_blank" class="me-3 text-reset">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/nighwan-technology-pvt-ltd/mycompany" target="_blank" class="me-3 text-reset">
+                  <i class="fab fa-linkedin"></i>
+                </a> 
+              </div>
+            </div> 
+          </footer>
+        </div> 
+        <!-- Footer --> 
+      </div>
+    </div> 
+    <div class="container containerx">
+      <!-- <app-carousel></app-carousel> --> 
+      <div class="container-fluid">
+        <mdb-carousel [controls]="true">
+          <mdb-carousel-item>
+            <div class="card text-center">
+              <!-- Your card content -->
+              <img src="../../assets/login/imgx1.png" alt="Background Image" style="height: fit-content; width:100%;">
+              <button
+                style="background-color: #3d9b4e; border:green;height: 5vh; width: 5vh; top: 84vh; left:39vh;z-index: 100000; position: absolute; border-radius: 30px;"></button>
+              <button
+                style="background-color: #3d9b4e;border:green; height: 5vh; width: 5vh; top: 84vh; left:54vh;z-index: 100000; position: absolute; border-radius: 30px;"></button>
+              <button
+                style="color: white; z-index: 1000; position: absolute; top: 25vh; left: 18vw; width:24vh; height:5.3vh ;border-radius:20px;background-color:green"><a
+                  href="https://nighwantech.com/" style="text-decoration: none;color: white;">Learn More <i
+                    class="fa fa-chevron-circle-right"></i></a>
+              </button> 
+            </div> 
+          </mdb-carousel-item>
+          <mdb-carousel-item>
+            <div class="card text-center">
+              <!-- Your card content -->
+              <img src="../../assets/login/imgx2.png" alt="Background Image" style="height: fit-content; width:100%;">
+              <button
+                style="background-color: #f1aa1e; border: 1px solid #f6c039;height: 6vh; width: 6vh; top: 83vh; left:26vw;z-index: 100000; position: absolute; border-radius: 30px;"></button>
+              <button
+                style="background-color:#f6c039; border: 1px solid #f6c039;height: 6vh; width: 6vh; top: 84vh; left:18vw;z-index: 100000; position: absolute; border-radius: 30px;"></button>
+
+              <button
+                style="color: white; z-index: 1000; position: absolute; top: 70vh; left: 30vw; width:24vh; height:5.3vh ;border:3px solid black;border-radius:20px;background-color:orange"><a
+                  href="https://nighwantech.com/" style="text-decoration: none;color: white; ">Learn More <i
+                    class="fa fa-chevron-circle-right"></i></a></button>
+            </div>
+          </mdb-carousel-item>
+          <mdb-carousel-item>
+            <div class="card text-center">
+              <!-- Your card content -->
+              <img src="../../assets/login/imgx3.png" alt="Background Image" style="height: fit-content; width:100%;">
+              <button
+                style="background-color: #3d9b4e;border:green; height: 7vh; width: 7vh; top: 84vh; left:39vh;z-index: 100000; position: absolute; border-radius: 30px;"></button>
+              <button
+                style="background-color: #3d9b4e; height: 7vh;border:green; width: 7vh; top: 84vh; left:54vh;z-index: 100000; position: absolute; border-radius: 30px;"></button>
+              <button
+                style="color: white; z-index: 1000; position: absolute; top: 57vh; left: 29vw; width:24vh; height:5.3vh ;border-radius:20px;background-color:green"><a
+                  href="https://nighwantech.com/" style="text-decoration: none;color: white;">Get it now <i
+                    class="fa fa-chevron-circle-right"></i></a></button>
+            </div>
+          </mdb-carousel-item>
+        </mdb-carousel>
+      </div>
+    </div>
+  </div>
+</div>

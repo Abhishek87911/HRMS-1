@@ -1,0 +1,111 @@
+<div class="full-container">
+    <div class="logo-container">
+      <img  src="../../../assets/img/logo_small.png" alt="" class="logo-img" *ngIf="!isSidebarActive">
+      <img src="../../../assets/img/logo_big.png" alt="" class="logo-img-active" *ngIf="isSidebarActive">
+    </div>
+    <div class="profile-container">
+      <div [ngClass]="{'profile-image': true, 'profile-image-active': isSidebarActive}">
+        <img src="../../../assets/img/user-img.jpg" class="profile-photo">
+      </div>
+      <div class="profile-text" *ngIf="isSidebarActive">
+        <span class="profile-text-bold">John Doe</span><br>
+        <span>CHRO</span>
+      </div>
+    </div>
+    <!-- Searchbar Section -->
+    <div class="search-container" *ngIf="isSidebarActive">
+      <input type="text" class="search" placeholder="Search">
+      <button><img src="../../../assets/img/search-icon.png" alt=""></button>
+    </div>
+    <button class="toggle-btn"
+      [ngClass]="{'rotate-btn' : (isSidebarActive && isLayoutLtr), 'rotate-btn-rtl' : (isSidebarActive && !isLayoutLtr), 'toggle-btn' : true, 'toggle-btn-rtl': !isLayoutLtr}"
+      (click)="sendDataToParent()">
+      >
+    </button>
+  
+    <div class="inactive-icon-container" *ngIf="!isSidebarActive">
+  
+      <div class="sidebar-icon-div" (click)="inactiveSidebarClick()" *ngIf="!isSidebarActive">
+        <button>
+          <img class="sidebar-icon" src="../../../assets/img/home-icon.png" alt="">
+        </button>
+      </div>
+  
+      <div class="sidebar-icon-div" (click)="inactiveSidebarClick()" *ngIf="!isSidebarActive">
+        <button>
+          <img class="sidebar-icon" src="../../../assets/img/admin-icon.png" alt="">
+        </button>
+      </div>
+  
+      <div class="sidebar-icon-div" (click)="inactiveSidebarClick()" *ngIf="!isSidebarActive">
+        <button>
+          <img class="sidebar-icon" src="../../../assets/img/products-icon.png" alt="">
+        </button>
+      </div>
+  
+      <div class="sidebar-icon-div" (click)="inactiveSidebarClick()" *ngIf="!isSidebarActive">
+        <button>
+          <img class="sidebar-icon" src="../../../assets/img/orders-icon.png" alt="">
+        </button>
+      </div>
+  
+      <div class="sidebar-icon-div" (click)="inactiveSidebarClick()" *ngIf="!isSidebarActive">
+        <button>
+          <img class="sidebar-icon" src="../../../assets/img/sales-icon.png" alt="">
+        </button>
+      </div>
+  
+      <div class="sidebar-icon-div" (click)="inactiveSidebarClick()" *ngIf="!isSidebarActive">
+        <button>
+          <img class="sidebar-icon" src="../../../assets/img/coupons-icon.png" alt="">
+        </button>
+        
+      </div>
+      <div class="sidebar-icon-div" (click)="inactiveSidebarClick()" *ngIf="!isSidebarActive">
+        <button>
+          <img class="sidebar-icon" src="../../../assets/img/timesheet.png">
+        </button>
+        
+      </div>
+    </div>
+    
+    <div class="active-links-container" *ngIf="isSidebarActive">
+      <a routerLink="dashboard" routerLinkActive="active" [ngClass]="{'active-links-container-links':true, 'active-links-container-links-rtl':!isLayoutLtr}"
+        (click)="activeSidebarClick()">
+        <img class="sidebar-icon" src="../../../assets/img/home-icon.png" alt="">
+        <span>Dashboard</span>
+      </a>
+      <a routerLink="Empdashboard" routerLinkActive="active" [ngClass]="{'active-links-container-links':true, 'active-links-container-links-rtl':!isLayoutLtr}"
+        (click)="activeSidebarClick()">
+        <img class="sidebar-icon" src="../../../assets/img/admin-icon.png" alt="">
+        <span>Employee</span>
+      </a>
+      <a routerLink="MasterHeader" routerLinkActive="active" [ngClass]="{'active-links-container-links':true, 'active-links-container-links-rtl':!isLayoutLtr}"
+        (click)="activeSidebarClick()">
+        <img class="sidebar-icon" src="../../../assets/img/products-icon.png" alt="">
+        <span>Master</span>
+      </a>
+      <a routerLink="atteHeader" routerLinkActive="active" [ngClass]="{'active-links-container-links':true, 'active-links-container-links-rtl':!isLayoutLtr}"
+        (click)="activeSidebarClick()">
+        <img class="sidebar-icon" src="../../../assets/img/orders-icon.png" alt="">
+        <span>Attendance</span>
+      </a>
+      <a routerLink="leaveHeader" routerLinkActive="active" [ngClass]="{'active-links-container-links':true, 'active-links-container-links-rtl':!isLayoutLtr}"
+        (click)="activeSidebarClick()">
+        <img class="sidebar-icon" src="../../../assets/img/sales-icon.png" alt="">
+        <span>Leave</span>
+      </a>
+      <a routerLink="assetheader" [ngClass]="{'active-links-container-links':true, 'active-links-container-links-rtl':!isLayoutLtr}"
+        (click)="activeSidebarClick()">
+        <img class="sidebar-icon" src="../../../assets/img/coupons-icon.png" alt="">
+        <span>Assets</span>
+      </a>
+      <a routerLink="timesheet" [ngClass]="{'active-links-container-links':true, 'active-links-container-links-rtl':!isLayoutLtr}"
+      (click)="activeSidebarClick()">
+      <img class="sidebar-icon" src="../../../assets/img/timesheet.png" alt="">
+      <span>TimeSheet</span>
+    </a>
+       
+    </div>
+ 
+  </div>

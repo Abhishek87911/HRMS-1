@@ -1,0 +1,98 @@
+.dropdownmore {
+  margin-top: 0.6%;
+  text-decoration: none;
+}
+
+.nav li {
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+.user-tabs {
+  white-space: nowrap; /* Prevents wrapping */
+  overflow-x: auto; /* Enables horizontal scrolling when necessary */
+  -webkit-overflow-scrolling: touch; /* Enables smooth scrolling on iOS */
+}
+
+
+// .dropdownmore{
+//   margin-top: 0.8%;
+//   text-decoration: none;
+// }
+
+.nav li {
+  list-style: none;
+  display: inline-block;
+}
+
+
+.nav .nav-item {
+  margin-right: 10px;
+  border-bottom: 3px solid rgb(214, 213, 210);
+  margin-bottom: -8px;
+}
+.nav .nav-link {
+  position: relative; 
+  color: black; 
+}
+
+
+.nav .nav-link::before {
+  content: ''; 
+  position: absolute;
+  bottom: -8px; 
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: transparent; 
+  transition: width 0.3s ease; 
+}
+.nav .nav-link.active::before {
+  width: 100%; 
+  background-color: orange; 
+}
+
+
+.nav .nav-link:hover::before {
+  width: 100%; 
+  background-color: orange;
+}
+
+
+.nav .nav-link:hover {
+  background-color: orange; 
+  color: white; 
+  
+}
+
+.nav .nav-link.active {
+  font-weight: bold; 
+  background-color: orange;
+  color: white; 
+
+}
+
+.stepper {
+  display: flex;
+}
+
+.step {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.step.active {
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+}
+
+.step:hover {
+  background-color:#e0e0e0;
+}

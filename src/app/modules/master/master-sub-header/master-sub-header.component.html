@@ -1,0 +1,112 @@
+<div class="main"> 
+    <div class="main">  
+        <div class="responsive-tabs d-md-none d-flex align-items-center">
+            <div class="ms-2">
+                <a routerLink="/main/dashboard" class="black-link">
+                    <i class="fas fa-house fa-fw fs-4"></i>
+                </a>
+            </div>
+            <div class="ms-2">
+                <a routerLink="/" class="black-link">
+                    <i class="fas fa-arrow-left fa-fw fs-4"></i>
+                </a>
+            </div>
+            <select class="form-select mb-1" (change)="selectTab($event)">
+                <option></option>
+                <!-- <option value="/employeeDashboard">Home</option> -->
+                <option value="/office">Office</option>
+                <option value="/department">Department</option>
+                <option value="/designation">Designation</option>
+                 <option value="/client">Client</option>
+                
+                <!--<option value="/identity">Identity</option>
+                <option value="/qualification">Qualification </option>
+                <option value="/bankaccount">Bank account</option>
+                <option value="/family">Family</option>
+                <option value="/experience">Experience</option> -->
+            </select>
+        </div>
+
+        <div class="card tab-box">
+            <div class="row user-tabs">
+                <div class="d-none d-md-block">
+                    <nav>
+                        <ul class="nav"> 
+                            <li class="tab nav-item">
+                                <a data-bs-toggle="tab" class="nav-link"
+                                    routerLink="/main/dashboard">
+                                    <i class="fas fa-house fa-fw me-2"></i>
+                                </a>
+                            </li>
+                            <li class="tab nav-item">
+                                <a data-bs-toggle="tab" class="nav-link"
+                                    routerLink="/">
+                                    <i class="fas fa-arrow-left fa-fw me-2"></i>
+                                </a>
+                            </li>
+                            <li class="tab nav-item">
+                                <a data-bs-toggle="tab" class="nav-link"
+                                    routerLink="../office">
+                                    <i
+                                        class="fas fa-user fa-fw me-2"></i>Office
+                                </a>
+                            </li>
+                            <li class="tab nav-item">
+                                <a data-bs-toggle="tab" class="nav-link"
+                                    routerLink="../department">
+                                    <i
+                                        class="fas fa-user fa-fw me-2"></i>Department
+                                </a>
+                            </li>
+                           <li class="tab nav-item">
+                                <a data-bs-toggle="tab" class="nav-link"
+                                    routerLink="../designation">
+                                    <i
+                                        class="fas fa-user fa-fw me-2"></i>Designation
+                                </a>
+                            </li>
+                            <li class="tab nav-item">
+                                <a data-bs-toggle="tab" class="nav-link"
+                                    routerLink="../eduction">
+                                    <i
+                                        class="fas fa-user fa-fw me-2"></i>Eduction
+                                </a>
+                            </li>
+                            <li class="tab nav-item">
+                                <a data-bs-toggle="tab" class="nav-link"
+                                    routerLink="../Workshift">
+                                    <i
+                                        class="fas fa-user fa-fw me-2"></i>Work shift
+                                </a>
+                            </li>
+                            <li class="tab nav-item">
+                                <a data-bs-toggle="tab" class="nav-link"
+                                    routerLink="../jobTitle">
+                                    <i
+                                        class="fas fa-user fa-fw me-2"></i>Job Title
+                                </a>
+                            </li>
+                            <li class="tab nav-item">
+                                <a data-bs-toggle="tab" class="nav-link"
+                                    routerLink="../client">
+                                    <i
+                                        class="fas fa-user fa-fw me-2"></i>Client
+                                </a>
+                            </li>                                                      
+                            <li class="tab nav-item">
+                                <a data-bs-toggle="tab" class="nav-link"
+                                    routerLink="../quick">
+                                    <i class="fas fa-ellipsis-v"></i><i class="fas fa-ellipsis-v"><i class="fas fa-ellipsis-v"></i></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- <div>
+                            <button mat-fab extended class="share-button" (click)="toggleShare()" matTooltip="My Shortcut"
+                                aria-label="Button that displays a tooltip in various positions">
+                                <i class="fas fa-ellipsis-v"></i><i class="fas fa-ellipsis-v"><i class="fas fa-ellipsis-v"></i></i></button>
+                      </div> -->
+                    </nav>
+                </div>
+            </div>           
+        </div>       
+    </div>

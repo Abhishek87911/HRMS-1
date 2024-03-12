@@ -1,0 +1,75 @@
+
+<div class="main">
+    <div class="main">
+        <div class="responsive-tabs d-md-none d-flex align-items-center">
+            <div class="ms-2">
+                <a routerLink="/main/dashboard" class="black-link">
+                    <i class="fas fa-house fa-fw fs-4"></i>
+                </a>
+            </div>
+            <div class="ms-2">
+                <a routerLink="/" class="black-link">
+                    <i class="fas fa-arrow-left fa-fw fs-4"></i>
+                </a>
+            </div>
+            <select class="form-select mb-1" (change)="selectTab($event)">
+                <option></option>
+                <!-- <option value="/employeeDashboard">Home</option> -->
+                <option value="/assetbrand">Brand</option>
+                <option value="/category">Category</option>
+                <option value="/assetlist">Asset List</option>
+                <option value="/vendor">Vendor</option>
+            </select>
+        </div>
+        <div class="card tab-box">
+            <div class="row user-tabs">
+                <div class="d-none d-md-block">
+                    <nav>
+                        <ul class="nav">
+                            <li class="tab nav-item">
+                                <a data-bs-toggle="tab" class="nav-link" routerLink="/main/dashboard">
+                                    <i class="fas fa-house fa-fw me-2"></i>
+                                </a>
+                            </li>
+                            <li class="tab nav-item">
+                                <a data-bs-toggle="tab" class="nav-link" routerLink="/">
+                                    <i class="fas fa-arrow-left fa-fw me-2"></i>
+                                </a>
+                            </li>
+                            <li class="tab nav-item">
+                                <a data-bs-toggle="tab" class="nav-link" routerLink="../assetbrand">
+                                    <i class="fas fa-user fa-fw me-2"></i>Brand
+                                </a>
+                            </li>
+                            <li class="tab nav-item">
+                                <a data-bs-toggle="tab" class="nav-link" routerLink="../category">
+                                    <i class="fas fa-user fa-fw me-2"></i>Category
+                                </a>
+                            </li>
+                            <li class="tab nav-item">
+                                <a data-bs-toggle="tab" class="nav-link" routerLink="../assetlist">
+                                    <i class="fas fa-user fa-fw me-2"></i>Asset List
+                                </a>
+                            </li>
+                            <li class="tab nav-item">
+                                <a data-bs-toggle="tab" class="nav-link" routerLink="../vendor">
+                                    <i class="fas fa-user fa-fw me-2"></i>Vendor
+                                </a>
+                            </li>
+                            <li class="tab nav-item">
+                                <a data-bs-toggle="tab" class="nav-link" routerLink="../quick">
+                                    <i class="fas fa-ellipsis-v"></i><i class="fas fa-ellipsis-v"><i
+                                            class="fas fa-ellipsis-v"></i></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- <div>
+                            <button mat-fab extended class="share-button" (click)="toggleShare()" matTooltip="My Shortcut"
+                                aria-label="Button that displays a tooltip in various positions">
+                                <i class="fas fa-ellipsis-v"></i><i class="fas fa-ellipsis-v"><i class="fas fa-ellipsis-v"></i></i></button>
+                      </div> -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>

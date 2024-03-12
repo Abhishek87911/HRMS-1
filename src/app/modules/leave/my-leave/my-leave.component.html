@@ -1,0 +1,147 @@
+<app-leave-sub-header></app-leave-sub-header>
+<div style="overflow-x: hidden">
+  <div class="card" style="
+      margin: 40px;
+      border: 1px solid rgb(188, 184, 184);
+      border-radius: 30px;
+    ">
+    <div class="card-body">
+      <form action="/action_page.php">
+        <h1 style="padding-left: 20px">
+          Search
+          <sub style="font-size: small">(Please Specify your search) </sub>
+          <i class="fa-solid fa-calendar-days" style="color: orange; padding: 7px"></i>
+        </h1>
+
+        <div class="date-container">
+          <div class="col-sm-3 mb-4 "
+            style="margin-right: 20px; margin-left: 30px;padding-top:10px;border-radius: 10px; width:400px">
+            <!-- Email input -->
+            <mdb-form-control style="border-radius: 10px;">
+              <input mdbInput type="date" id="form8Example10" class="form-control" />
+              <label mdbLabel class="form-label" for="form8Example10">From*</label>
+            </mdb-form-control>
+
+          </div>
+
+          <div class="col-sm-3 mb-4 "
+            style="margin-right: 0px; margin-left: 30px;padding-top:10px;border-radius: 10px; width:400px">
+            <!-- Email input -->
+            <mdb-form-control style="border-radius: 10px;">
+              <input mdbInput type="date" id="form8Example10" class="form-control" />
+              <label mdbLabel class="form-label" for="form8Example10">To*</label>
+            </mdb-form-control>
+
+          </div>
+
+          <div style="
+              width: fit-content;
+              margin: 15px;
+              border-radius: 20px;
+              margin-left: 15vw;
+            ">
+            <div class="card-body" style="
+                display: flex;
+                align-items: center;
+                height: 25px;
+                padding: 25px;
+                border-radius: 10px;
+              ">
+              <h6 class="" style="
+                  margin-top: 27px;
+                  margin-left: 10px;
+                  cursor: pointer;
+                  font-weight: 600;
+                "></h6>
+            </div>
+          </div>
+        </div>
+
+        <hr style="width: 94%; margin-left: 40px" />
+
+        <div style="display: flex ;justify-content: space-around; padding-left: 0px;">
+          <label class="orange-checkbox-container" style="padding-left: 30px; padding-right: 20px">
+            <h5>All</h5>
+
+            <input type="checkbox" checked="checked" />
+
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="orange-checkbox-container" style="padding-left: 30px; padding-right: 20px">
+            <h5>Cancelled</h5>
+
+            <input type="checkbox" checked="checked" />
+
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="orange-checkbox-container" style="padding-left: 30px; padding-right: 20px">
+            <h5>Pending Approval</h5>
+
+            <input type="checkbox" checked="checked" />
+
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="orange-checkbox-container" style="padding-left: 30px; padding-right: 20px">
+            <h5>Scheduled</h5>
+
+            <input type="checkbox" checked="checked" />
+
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="orange-checkbox-container" style="padding-left: 30px; padding-right: 20px">
+            <h5>Taken</h5>
+
+            <input type="checkbox" checked="checked" />
+
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="orange-checkbox-container" style="padding-left: 30px; padding-right: 20px">
+            <h5>Rejected</h5>
+
+            <input type="checkbox" checked="checked" />
+
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <div style="
+            display: flex;
+            flex-direction: row-reverse;
+            padding-right: 40px;
+            padding-bottom: 30px;
+            justify-content: space-between;
+          ">
+          <div>
+            <button style="
+                width: 100px;
+                height: 40px;
+                color: white;
+                background-color: rgb(29, 110, 29);
+                font-size: large;
+                margin-left: 20px;
+              ">
+              SEARCH
+            </button>
+
+            <button style="
+                width: 100px;
+                height: 40px;
+                color: white;
+                background-color: rgb(186, 35, 27);
+                font-size: large;
+                margin-left: 20px;
+              ">
+              RESET
+            </button>
+          </div>
+
+          <h6 style="margin-left: 37px">*Required</h6>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

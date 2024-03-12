@@ -1,0 +1,405 @@
+<app-employee-sub-header></app-employee-sub-header>
+<div class="main ">
+    <mdb-tabs class=" d-md-block">
+        <mdb-tab>
+            <ng-template mdbTabTitle><span><i class="fas fa-user-plus fa-fw me-2"></i>Add</span></ng-template>
+            <div class="tab1">
+                <fieldset class="border p-2">
+                    <legend class="float-none w-auto ">Add Employee</legend> 
+                    
+                    <div class="row md-4">
+                        <div class="col-sm-3 mb-4">
+                            <mdb-form-control>
+                                <select mdbInput id="form8Example6"  class="form-control"
+                                    aria-labelledby="dropdownMenuLink">
+                                    <option value="" disabled selected hidden></option>
+                                    <option value="1">Patna</option>
+                                    <option value="2">Hyderabad</option>
+                                    <option value="3">Bhopal</option>
+                                    <option value="4">New Delhi</option>
+                                    <!-- <option value="option3">Option 3</option> -->
+                                    <!-- Add more options as needed -->
+                                </select>
+                                <label mdbLabel class="form-label" for="form8Example6">Office Location<span
+                                        class="text-danger">*</span></label>
+                                <i class="fas fa-caret-down"
+                                    style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;"></i>
+                            </mdb-form-control>
+                            <!-- Country dropdown list -->
+
+                         
+                            
+                        </div>
+
+                      
+                        <div class="col-sm-3 mb-4">
+                            <!-- Email input -->
+                            
+                            <mdb-form-control>
+                                <select mdbInput id="form8Example6"  class="form-control"
+                                    aria-labelledby="dropdownMenuLink">
+                                    <option value="" disabled selected hidden></option>
+                                    <option value="option1">Full-Time Contract
+                                    </option>
+                                    <option value="option2">Full-Time Internship
+                                    </option>
+                                    <option value="option3">Full-Time Permanent
+                                    </option>
+                                    <!-- Add more options as needed -->
+                                </select>
+                                <label mdbLabel class="form-label" for="form8Example6">Employee Status <span
+                                        class="text-danger">*</span></label>
+                                <i class="fas fa-caret-down"
+                                    style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;"></i>
+                            </mdb-form-control>
+                           
+                        
+                        </div>
+                        <div class="col-sm-3 mb-4">
+                            <!-- Email input -->
+                            <mdb-form-control>
+                                <input mdbInput type="date" id="form8Example10" class="form-control" />
+                                <label mdbLabel class="form-label" for="form8Example10">Probation End Date</label>
+                            </mdb-form-control>
+                            
+                        </div>
+                        <div class="col-sm-3 mb-4">
+                            <!-- Date of Marriage input -->
+                            <mdb-form-control>
+                                <input mdbInput type="date" id="form8Example10" class="form-control" />
+                                <label mdbLabel class="form-label" for="form8Example10">Date Of Permanency</label>
+                            </mdb-form-control>
+                        </div>
+                        <div class="col-sm-3 mb-4">
+                            <!-- Email input with checkbox -->
+                            <mdb-form-control>
+                                <select mdbInput id="form8Example6"  class="form-control"
+                                    aria-labelledby="dropdownMenuLink">
+                                    <option value="" disabled selected hidden></option>
+                                    <option value="option1">Engineers (IT)</option>
+                                    <option value="option2">Finance Team</option>
+                                    <option value="option3">Research and Development (R&D)</option>
+                                    <option value="option3">Human Resources</option>
+                                    <option value="option3">Marketing</option>
+                                    <!-- Add more options as needed -->
+                                </select>
+                                <label mdbLabel class="form-label" for="form8Example6">Department <span
+                                        class="text-danger">*</span></label>
+                                <i class="fas fa-caret-down"
+                                    style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;"></i>
+                            </mdb-form-control>
+                        </div>
+                        
+                        
+                       
+                        <div class="col-sm-3 mb-4">
+                            <!-- Email input -->
+                            <mdb-form-control>
+                                <select mdbInput id="form8Example6"  class="form-control"
+                                    aria-labelledby="dropdownMenuLink">
+                                    <option value="" disabled selected hidden></option>
+                                    <option value="option1">Internship</option>
+                                    <option value="option2">Developer</option>
+                                    <option value="option3">Full-Stack Developer</option>
+                                    <option value="option2">Angular Developer</option>
+
+                                    <!-- Add more options as needed -->
+                                </select>
+                                <label mdbLabel class="form-label" for="form8Example6">Designation <span
+                                        class="text-danger">*</span></label>
+                                <i class="fas fa-caret-down"
+                                    style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;"></i>
+                            </mdb-form-control>
+                            
+                        </div>
+                       
+                        
+                        <div class="col-sm-3 mb-4">
+                            <!-- Date of Marriage input -->
+                            
+                            <mdb-form-control>
+                                <select mdbInput id="form8Example6"  class="form-control"
+                                    aria-labelledby="dropdownMenuLink">
+                                    <option value="" disabled selected hidden></option>
+                                    <option value="option1">Sandeep</option>
+                                    <option value="option2">Niraj</option>
+                                    <option value="option3">Suraj</option>
+                                    <!-- Add more options as needed -->
+                                </select>
+                                <label mdbLabel class="form-label" for="form8Example6">Supervisor <span
+                                        class="text-danger">*</span></label>
+                                <i class="fas fa-caret-down"
+                                    style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;"></i>
+                            </mdb-form-control>
+                           
+                        </div>
+                        <div class="col-sm-3 mb-4">
+                            <!-- Email input -->
+                            
+                            <mdb-form-control>
+                                <input mdbInput type="email" id="form8Example8" class="form-control" [disabled]="!enableEmployeeID">
+                                <label mdbLabel class="form-label" for="form8Example8">Employee ID <span class="text-danger">*</span></label>
+                                <!-- Checkbox to enable/disable -->
+                                <label class="enable-checkbox">
+                                    <input type="checkbox" >
+                                    
+                                </label>
+                            </mdb-form-control>
+                            
+                         
+
+                        
+                            
+                        </div>
+                      
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3 mb-4">
+                            <!-- Email input -->
+                            <mdb-form-control>
+                                <select mdbInput id="form8Example6"  class="form-control"
+                                    aria-labelledby="dropdownMenuLink">
+                                    <option value="" disabled selected hidden></option>
+                                    <option value="option1">Admin</option>
+                                    <option value="option2">User</option>
+                                    <option value="option3">Vendor</option>
+                                    <option value="option3">Digital Marketing</option>
+                                    <!-- <option value="option3">Option 3</option> -->
+                                    <!-- Add more options as needed -->
+                                </select>
+                                <label mdbLabel class="form-label" for="form8Example6">Select Role <span
+                                        class="text-danger">*</span></label>
+                                <i class="fas fa-caret-down"
+                                    style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;"></i>
+                            </mdb-form-control>
+                            
+                        </div>
+                        
+                      
+                       
+                        
+                        <div class="col-sm-3 mb-4">
+                            <!-- Email input -->
+                            <mdb-form-control>
+                                <select mdbInput id="form8Example6" class="form-control"
+                                    aria-labelledby="dropdownMenuLink">
+                                    <option value="" disabled selected hidden></option>
+                                    <option value="option1">Day</option>
+                                    <option value="option2">Night</option>
+                                    <!-- <option value="option3">Vendor</option>
+                                    <option value="option3">Digital Marketing</option> -->
+                                    <!-- <option value="option3">Option 3</option> -->
+                                    <!-- Add more options as needed -->
+                                </select>
+                                <label mdbLabel class="form-label" for="form8Example6">work Shift <span
+                                        class="text-danger">*</span></label>
+                                <i class="fas fa-caret-down"
+                                    style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;"></i>
+                            </mdb-form-control>
+                            
+                        </div>
+                        <div class="col-sm-3 mb-4">
+                            <!-- Email input -->
+                            <mdb-form-control>
+                                <select mdbInput id="form8Example6"  class="form-control"
+                                    aria-labelledby="dropdownMenuLink">
+                                    <option value="" disabled selected hidden></option>
+                                    <option value="option1">Admin</option>
+                                    <option value="option2">User</option>
+                                    <option value="option3">Vendor</option>
+                                    <option value="option3">Digital Marketing</option>
+                                    <!-- <option value="option3">Option 3</option> -->
+                                    <!-- Add more options as needed -->
+                                </select>
+                                <label mdbLabel class="form-label" for="form8Example6">Work Type <span
+                                        class="text-danger">*</span></label>
+                                <i class="fas fa-caret-down"
+                                    style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;"></i>
+                            </mdb-form-control>
+                            
+                        </div>
+                        
+                       
+                       
+                    </div>
+
+                    
+
+                        <div class="toogle-button">
+                            <span class="span">Create Login Details</span>
+                            &nbsp;
+                            <label class="toggle-label">
+                                <input class="toggle-checkbox" type="checkbox" (change)="toggleForm($event)">
+        
+                                <div class="toggle-slot">
+                                  <div class="sun-icon-wrapper">
+                                    <div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"></div>
+                                  </div>
+                                  <div class="toggle-button"></div>
+                                  <div class="moon-icon-wrapper">
+                                    <div class="iconify moon-icon" data-icon="feather-moon" data-inline="false"></div>
+                                  </div>
+                                </div>
+                              </label>
+                              
+                              <form *ngIf="showForm" class="tab1">
+                                <fieldset class="border p-2">
+                                  <legend class="float-none w-auto">Login Detail</legend>
+                                  <div class=" row">
+                                    <div class="col-sm-3 mb-4">
+                                      <!-- Email input -->
+                                      <mdb-form-control>
+                                        <input mdbInput type="text" id="fromDate" class="form-control" />
+                                        <label mdbLabel class="form-label" for="fromDate">Username <span class="text-danger">*</span></label>
+                                      </mdb-form-control>
+                                    </div>
+                                    <div class="col-sm-3 mb-4">
+                                      <!-- Email input -->
+                                      <mdb-form-control>
+                                        <label class="status-label">Status:</label>
+                                        <label for="status_enable" class="status-label">Enable</label>
+                                        <input type="radio" id="status_enable" name="status" value="enable" checked>
+                                        &nbsp;
+                                        <label for="status_disable" class="status-label">Disable</label>
+                                        <input type="radio" id="status_disable" name="status" value="disable">
+                                      </mdb-form-control>
+                                    </div>
+                                    <div class="col-sm-3 mb-4">
+                                      <!-- Email input -->
+                                      <mdb-form-control>
+                                        <input mdbInput type="password" id="fromDate" class="form-control" />
+                                        <label mdbLabel class="form-label" for="fromDate">Password <span class="text-danger">*</span></label>
+                                      </mdb-form-control>
+                                    </div>
+                                    <div class="col-sm-3 mb-4">
+                                      <!-- Email input -->
+                                      <mdb-form-control>
+                                        <input mdbInput type="password" id="toDate" class="form-control" />
+                                        <label mdbLabel class="form-label" for="toDate">Confirm Password <span class="text-danger">*</span></label>
+                                      </mdb-form-control>
+                                    </div>
+                                </div>
+
+
+                                  <div class=" row">
+                                    <div class="col-sm-3 mb-4">
+                                      <!-- Email input -->
+                                      <mdb-form-control>
+                                        <select mdbInput id="form8Example3"  class="form-control"
+                                            aria-labelledby="dropdownMenuLink">
+                                            <option value="" disabled selected hidden></option>
+                                            <option value="option1">Default ESS</option>
+                                            <!-- <option value="option2">Option</option>
+                                            <option value="option3">Option</option> -->
+                                            <!-- Add more options as needed -->
+                                        </select>
+                                        <label mdbLabel class="form-label" for="form8Example3">ESS Role <span
+                                                class="text-danger">*</span></label>
+                                        <i class="fas fa-caret-down"
+                                            style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;"></i>
+                                    </mdb-form-control>
+                                    </div>
+                                    <div class="col-sm-3 mb-4">
+                                      <!-- Email input -->
+                                      <mdb-form-control>
+                                        <select mdbInput id="form8Example3"  class="form-control"
+                                            aria-labelledby="dropdownMenuLink">
+                                            <option value="" disabled selected hidden></option>
+                                            <option value="option1">Default Supervisor</option>
+                                            <!-- <option value="option2">Option</option>
+                                            <option value="option3">Option</option> -->
+                                            <!-- Add more options as needed -->
+                                        </select>
+                                        <label mdbLabel class="form-label" for="form8Example3">Supervisor Role <span
+                                                class="text-danger">*</span></label>
+                                        <i class="fas fa-caret-down"
+                                            style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;"></i>
+                                    </mdb-form-control>
+                                    </div>
+                                    <div class="col-sm-3 mb-4">
+                                        <!-- Email input -->
+                                        <mdb-form-control>
+                                            <select mdbInput id="form8Example3"  class="form-control"
+                                                aria-labelledby="dropdownMenuLink">
+                                                <option value="" disabled selected hidden></option>
+                                                <option value="option1">Global Admin</option>
+                                                <option value="option2">Leave Admin</option>
+                                                <option value="option3">Report Admin</option>
+                                                <!-- Add more options as needed -->
+                                            </select>
+                                            <label mdbLabel class="form-label" for="form8Example3">Admin Role <span
+                                                    class="text-danger">*</span></label>
+                                            <i class="fas fa-caret-down"
+                                                style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;"></i>
+                                        </mdb-form-control>
+                                      </div>
+                                  </div>
+                                </fieldset>
+                              </form>
+                        </div>
+                   
+                      
+
+                        <hr>
+                        
+                        <div class="button col-sm-4">
+
+                            <button mdbRipple type="button" class="btn btn-secondary btn-sm"><i class="fa-solid fa-backward"></i> &nbsp; Back</button>
+                            <button mdbRipple type="button" class="savebutton btn-info btn-sm"><i class="fas fa-save fa-fw me-2"></i>Save</button>
+                            <button mdbRipple type="button" class="btn btn-secondary btn-sm"> Next &nbsp; <i class="fa-solid fa-forward"></i></button>
+            
+                        </div>
+                      
+                      
+                      
+                    </fieldset>
+            </div>
+        </mdb-tab>
+
+        <mdb-tab>
+            <ng-template mdbTabTitle><span><i class="fas fa-users-line fa-fw me-2"></i>List</span></ng-template>
+
+            <div class="tab2">
+                <table class="table align-middle mb-0 bg-white">
+                    <thead class="bg-light">
+                        <tr>
+                            <th>Name</th>
+                            <th>Title</th>
+                            <th>Status</th>
+                            <th>Position</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="https://mdbootstrap.com/img/new/avatars/8.jpg" alt=""
+                                        style="width: 45px; height: 45px" class="rounded-circle" />
+                                    <div class="ms-3">
+                                        <p class="fw-bold mb-1">John Doe</p>
+                                        <p class="text-muted mb-0">john.doegmail.com</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <p class="fw-normal mb-1">Software engineer</p>
+                                <p class="text-muted mb-0">IT department</p>
+                            </td>
+                            <td>
+                                <span class="badge badge-success rounded-pill d-inline">Active</span>
+                            </td>
+                            <td>Senior</td>
+                            <td>
+                                <button type="button" class="btn btn-link btn-sm btn-rounded">Edit</button>
+                            </td>
+                        </tr>
+                        <!-- Repeat similar structure for other rows -->
+                    </tbody>
+                </table>
+            </div>
+
+        </mdb-tab>
+
+    </mdb-tabs>
+</div>

@@ -1,0 +1,252 @@
+<app-employee-sub-header></app-employee-sub-header>
+<div class="main ">
+    <mdb-tabs class=" d-md-block">
+        <mdb-tab>
+            <ng-template mdbTabTitle><span><i
+                        class="fas fa-user-plus fa-fw me-2"></i>Add</span></ng-template>
+            <div class="tab1">
+                <fieldset class="border p-2">
+                    <legend class="float-none w-auto ">Add Details</legend>
+                    <div class="row md-4">
+                        <div class="col-sm-3 mb-4">
+                            <mdb-form-control>
+                                <input mdbInput type="text" id="form8Example1"
+                                 [(ngModel)]="fullName" name="fullName"  class="form-control" />
+                                <label mdbLabel class="form-label"
+                                    for="form8Example1">Full Name <span
+                                        class="text-danger">*</span></label>
+                            </mdb-form-control>
+                        </div>
+                        <div class="col-sm-3 mb-4">
+                            <!-- Email input -->
+                            <mdb-form-control>
+                                <input mdbInput type="date" id="form8Example2"
+                                [(ngModel)]="dob" name="dob"  class="form-control" />
+                                <label mdbLabel class="form-label"
+                                    for="form8Example2">Date Of Birth <span
+                                        class="text-danger">*</span></label>
+                            </mdb-form-control>
+                        </div>
+
+                        <div class="col-sm-3 mb-4">
+                            <!-- Name dropdown list -->
+                            <mdb-form-control>
+                                <select mdbInput id="form8Example3"
+                                [(ngModel)]="gender" name="gender"  class="form-control"
+                                    aria-labelledby="dropdownMenuLink">
+                                    <option value disabled selected
+                                        hidden></option>
+                                    <option value="1">Male</option>
+                                    <option value="2">Female</option>
+                                    <option value="3">Others</option>
+                                    <!-- Add more options as needed -->
+                                </select>
+                                <label mdbLabel class="form-label"
+                                    for="form8Example3">Gender <span
+                                        class="text-danger">*</span></label>
+                                <i class="fas fa-caret-down"
+                                    style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;"></i>
+                            </mdb-form-control>
+                        </div>
+
+                        <div class="col-sm-3 mb-4">
+                            <!-- Name dropdown list -->
+
+                            <mdb-form-control>
+                                <select mdbInput id="form8Example4"
+                                [(ngModel)]="bloodGroup" name="bloodGroup" class="form-control"
+                                    aria-labelledby="dropdownMenuLink">
+                                    <option value disabled selected
+                                        hidden></option>
+                                    <option value="1">A+</option>
+                                    <option value="2">A-</option>
+                                    <option value="3">B-</option>
+                                    <option value="4">B+</option>
+                                    <option value="5">O+</option>
+                                    <option value="6">O-</option>
+                                    <option value="7">AB+</option>
+                                    <option value="8">AB-</option>
+                                    <!-- Add more options as needed -->
+                                </select>
+                                <label mdbLabel class="form-label"
+                                    for="form8Example4">Blood Group <span
+                                        class="text-danger">*</span></label>
+                                <i class="fas fa-caret-down"
+                                    style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;"></i>
+                            </mdb-form-control>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3 mb-4">
+                            <!-- Country dropdown list -->
+
+                            <mdb-form-control>
+                                <select mdbInput id="form8Example4"
+                                [(ngModel)]="reliegion" name="reliegion" class="form-control"
+                                    aria-labelledby="dropdownMenuLink">
+                                    <option value disabled selected
+                                        hidden></option>
+                                    <option value="1">Hinduism</option>
+                                    <option value="2">Islam</option>
+                                    <option
+                                        value="3">christianity</option>
+                                    <option value="4">Sikhism</option>
+                                    <option value="5">Buddhism</option>
+                                    <option value="6">Jainism</option>
+                                    <option value="7">Others</option>
+                                    <!-- Add more options as needed -->
+                                </select>
+                                <label mdbLabel class="form-label"
+                                    for="form8Example4">Religion <span
+                                        class="text-danger">*</span></label>
+                                <i class="fas fa-caret-down"
+                                    style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;"></i>
+                            </mdb-form-control>
+
+                        </div>
+
+                        <div class="col-sm-3 mb-4">
+                            <!-- Country dropdown list -->
+                            <mdb-form-control>
+                                <input mdbInput type="email" id="form8Example8"
+                                [(ngModel)]="fatherorHusbandName" name="fatherorHusbandName" class="form-control" />
+                                <label mdbLabel class="form-label"
+                                    for="form8Example8">Father/Husband name
+                                    <span
+                                        class="text-danger">*</span></label>
+                            </mdb-form-control>
+
+                        </div>
+                        <div class="col-sm-3 mb-4">
+                            <!-- Marital status input -->
+                            <mdb-form-control>
+                                <select mdbInput id="form8Example6"
+                                [(ngModel)]="maritalStatus" name="maritalStatus"  class="form-control"
+                                    aria-labelledby="dropdownMenuLink">
+                                    <option value disabled selected
+                                        hidden></option>
+                                    <option value="1">Unmarried</option>
+                                    <option value="2">Married</option>
+                                    <option value="3">Other</option>
+
+                                    <!-- Add more options as needed -->
+                                </select>
+                                <label mdbLabel class="form-label"
+                                    for="form8Example6">Marital status <span
+                                        class="text-danger">*</span></label>
+                                <i class="fas fa-caret-down"
+                                    style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;"></i>
+                            </mdb-form-control>
+                        </div>
+                        <div class="col-sm-3 mb-4">
+                            <!-- Date of Marriage input -->
+                            <mdb-form-control>
+                                <input mdbInput type="date" id="form8Example10"
+                                [(ngModel)]="dateofMarriage" name="dateofMarriage" class="form-control" />
+                                <label mdbLabel class="form-label"
+                                    for="form8Example10">Date of
+                                    Marriage</label>
+                            </mdb-form-control>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3 mb-4">
+                            <!-- Date of Marriage input -->
+                            <mdb-form-control>
+                                <input mdbInput type="text" id="form8Example10"
+                                [(ngModel)]="mobileNo" name="mobileNo" class="form-control" />
+                                <label mdbLabel class="form-label"
+                                    for="form8Example10">Mobile Number <span
+                                        class="text-danger">*</span></label>
+                            </mdb-form-control>
+                        </div>
+                        <div class="col-sm-3 mb-4">
+                            <!-- Date of Marriage input -->
+                            <mdb-form-control>
+                                <input mdbInput type="text" id="form8Example10"
+                                [(ngModel)]="email" name="email"  class="form-control" />
+                                <label mdbLabel class="form-label"
+                                    for="form8Example10">Email Id<span
+                                        class="text-danger">*</span></label>
+                            </mdb-form-control>
+                        </div>
+
+                    </div>
+                    <span
+                        class="text-danger">*</span> Required
+                    <hr>
+                    <div class="button col-sm-4">
+
+                        <button mdbRipple type="button"
+                            class="btn btn-secondary btn-sm"><i
+                                class="fa-solid fa-backward"></i> &nbsp;
+                            Back</button>
+                        <button mdbRipple type="button"
+                           (click)="saveproductdata()" class="btn btn-info btn-sm"><i
+                                class="fas fa-save fa-fw me-2"></i>Save</button>
+                        <button mdbRipple type="button"
+                            class="btn btn-secondary btn-sm"> Next &nbsp; <i
+                                class="fa-solid fa-forward"></i></button>
+
+                    </div>
+
+                </fieldset>
+            </div>
+        </mdb-tab>
+
+        <mdb-tab>
+            <ng-template mdbTabTitle><span><i
+                        class="fas fa-users-line fa-fw me-2"></i>List</span></ng-template>
+
+            <div class="tab2">
+                <table class="table align-middle mb-0 bg-white">
+                    <thead class="bg-light">
+                        <tr>
+                            <th>Name</th>
+                            <th>Title</th>
+                            <th>Status</th>
+                            <th>Position</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img
+                                        src="https://mdbootstrap.com/img/new/avatars/8.jpg"
+                                        alt
+                                        style="width: 45px; height: 45px"
+                                        class="rounded-circle" />
+                                    <div class="ms-3">
+                                        <p class="fw-bold mb-1">John Doe</p>
+                                        <p
+                                            class="text-muted mb-0">john.doegmail.com</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <p class="fw-normal mb-1">Software engineer</p>
+                                <p class="text-muted mb-0">IT department</p>
+                            </td>
+                            <td>
+                                <span
+                                    class="badge badge-success rounded-pill d-inline">Active</span>
+                            </td>
+                            <td>Senior</td>
+                            <td>
+                                <button type="button"
+                                    class="btn btn-link btn-sm btn-rounded">Edit</button>
+                            </td>
+                        </tr>
+                        <!-- Repeat similar structure for other rows -->
+                    </tbody>
+                </table>
+            </div>
+
+        </mdb-tab>
+
+    </mdb-tabs>
+</div>
